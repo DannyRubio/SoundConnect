@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_2"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/txtSoundTitleMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fuente1"
+        android:text="@string/title_SOUND"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/txtConnectTitleMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fuente1"
+        android:text="@string/title_CONNECT"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoundTitleMenu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnPair"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_border"
+        android:onClick="gotoPairDevices"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConnectTitleMenu"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/txtPairMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pair"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPair"
+        app:layout_constraintEnd_toEndOf="@+id/btnPair"
+        app:layout_constraintStart_toStartOf="@+id/btnPair"
+        app:layout_constraintTop_toTopOf="@+id/btnPair"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <ImageView
+        android:id="@+id/logoBluetooth"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPair"
+        app:layout_constraintEnd_toEndOf="@+id/btnPair"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtPairMenu"
+        app:layout_constraintTop_toTopOf="@+id/btnPair"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/logobluetooth" />
+
+    <Button
+        android:id="@+id/btnSelectPlaylist"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_border"
+        android:onClick="gotoPlaylists"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPair"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/txtSelectPlaylistMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectPlaylist"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSelectPlaylist"
+        app:layout_constraintEnd_toEndOf="@+id/btnSelectPlaylist"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="@+id/btnSelectPlaylist"
+        app:layout_constraintTop_toTopOf="@+id/btnSelectPlaylist"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <ImageView
+        android:id="@+id/imgQuarterNotes"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSelectPlaylist"
+        app:layout_constraintEnd_toEndOf="@+id/btnSelectPlaylist"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toEndOf="@+id/txtSelectPlaylistMenu"
+        app:layout_constraintTop_toTopOf="@+id/btnSelectPlaylist"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/quarternote2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/gearfull" />
+</androidx.constraintlayout.widget.ConstraintLayout>

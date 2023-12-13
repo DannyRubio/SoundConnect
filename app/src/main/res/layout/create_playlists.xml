@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_2"
+    tools:context=".Playlists">
+
+    <TextView
+        android:id="@+id/txtCreatePlaylistTitleMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fuente1"
+        android:text="@string/newPlaylist"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/btnCreatePlaylist"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_border"
+        android:onClick="createPlaylist"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCreatePlaylistTitleMenu"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/txtCreatePlaylistBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createPlaylist"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCreatePlaylist"
+        app:layout_constraintEnd_toEndOf="@+id/btnCreatePlaylist"
+        app:layout_constraintStart_toStartOf="@+id/btnCreatePlaylist"
+        app:layout_constraintTop_toTopOf="@+id/btnCreatePlaylist"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_border"
+        android:backgroundTint="#00000000"
+        android:backgroundTintMode="add"
+        android:onClick="gotoPlaylists"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtCreatePlaylistTitleMenu"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="@+id/btnBack"
+        app:layout_constraintStart_toStartOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnBack"
+        app:srcCompat="@drawable/back" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSongsList"
+        android:layout_width="370dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreatePlaylist"
+        app:layout_constraintVertical_bias="0.157" />
+    <TextView
+        android:id="@+id/txtNoSongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="@string/noSongs"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCreatePlaylistTitleMenu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnGoToAllSongs"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_border"
+        android:onClick="gotoAllSongs"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNoSongs"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <TextView
+        android:id="@+id/txtGoToPlaylistBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addSongs"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGoToAllSongs"
+        app:layout_constraintEnd_toEndOf="@+id/btnGoToAllSongs"
+        app:layout_constraintStart_toStartOf="@+id/btnGoToAllSongs"
+        app:layout_constraintTop_toTopOf="@+id/btnGoToAllSongs"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

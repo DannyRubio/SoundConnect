@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_1">#FFDBFDFC</color>
+    <color name="background_2">#1EC5E1</color>
+    <color name="background_3">#9ECDF1</color>
+    <color name="background_4">#FFB0E0E6</color>
+    <color name="complementary_green"> #FF7DC88E </color>
+    <color name="analogous_blue"> #1E64E1 </color>
+    <color name="complementary_green2"> #FF78AB46 </color>
+    <color name="red">#FFFF0000</color>
+    <color name="error_red">#E13A1E</color>
+    <color name="recyclerViewElementNormal">#1EE19B</color>
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SoundConnect</string>
+    <string name="uploadSong">Upload Song</string>
+    <string name="newPlaylist">New Playlist</string>
+    <string name="title_SOUND">SOUND</string>
+    <string name="title_CONNECT">CONNECT</string>
+    <string name="pair">Pair</string>
+    <string name="selectPlaylist">Select Playlist</string>
+    <string name="pairDevices">Pair Devices</string>
+    <string name="myPlaylists">My Playlists</string>
+    <string name="create">Create</string>
+    <string name="delete">Delete</string>
+    <string name="modifyValues">Modify Values</string>
+    <string name="songTitle">Song Title</string>
+    <string name="groupName">Group Name</string>
+    <string name="descriptionNameGroup">Modify the values which will define the name of the song and the group it is by.</string>
+    <string name="descriptionNamePlaylist">Modify the value which will give an identifying name to the playlist</string>
+    <string name="finish">Finish</string>
+    <string name="cancel">Cancel</string>
+    <string name="removeSongs">Remove Songs</string>
+    <string name="accept">Accept</string>
+    <string name="allSongs">All Songs</string>
+    <string name="manageSongs">Manage Songs</string>
+    <string name="addSong">Add Song</string>
+    <string name="createPlaylist">Create Playlist</string>
+    <string name="addSongs">Add Songs</string>
+    <string name="noSongs">You don\'t have songs uploaded to the app yet!</string>
+    <string name="playlistName">Playlist Name</string>
+
+</resources>
